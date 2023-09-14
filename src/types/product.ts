@@ -10,5 +10,8 @@ export interface Product {
 export interface ProductCardProps extends Omit<Product, "id"> {}
 
 export interface ProductListProps {
+  isNextPageLoading: boolean;
+  hasNextPage: boolean;
   products: Product[];
+  loadNextPage: () => Promise<void>;
 }

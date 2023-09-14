@@ -29,5 +29,6 @@ module.exports = {
   rules: {
     "no-unused-vars": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
+    "react/display-name": "off",
   },
 };
